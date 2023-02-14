@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visualizza parametro "id" dall'URL</title>
+	<title>Pagina di esempio</title>
 </head>
 <body>
-  <h1>Valore del parametro "id": <span id="id-value"></span></h1>
-
-  <script>
-    // Estrae il valore del parametro "id" dall'URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
-
-    // Mostra il valore del parametro "id" sulla pagina web
-    const idValueElement = document.getElementById('id-value');
-    idValueElement.textContent = id;
-  </script>
+	<h1>Valore del parametro "id": <?php echo $_GET['id']; ?></h1>
 </body>
 </html>
